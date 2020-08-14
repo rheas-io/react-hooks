@@ -1,0 +1,36 @@
+{
+  "name": "@rheas/react-hooks",
+  "version": "0.0.1",
+  "description": "Custom hooks for react frontend. Use these to extends React functionalities.",
+  "main": "./lib/index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "lib/**/*"
+  ],
+  "scripts": {
+    "test": "jest",
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.9",
+    "@types/react": "^16.9.46",
+    "jest": "^26.4.0",
+    "react": "^16.13.1",
+    "typescript": "^3.9.7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rheas-io/react-hooks.git"
+  },
+  "author": "Kalesh Kaladharan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rheas-io/react-hooks/issues"
+  },
+  "homepage": "https://github.com/rheas-io/react-hooks#readme"
+}
