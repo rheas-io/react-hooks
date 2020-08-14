@@ -1,20 +1,18 @@
 {
   "name": "@rheas/react-hooks",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Custom hooks for react frontend. Use these to extends React functionalities.",
-  "main": "./lib/index.js",
+  "main": "./index.js",
   "directories": {
     "test": "tests"
   },
   "publishConfig": {
     "access": "public"
   },
-  "files": [
-    "lib/**/*"
-  ],
   "scripts": {
     "test": "jest",
-    "build": "tsc"
+    "build": "tsc && cp -rf package.json lib",
+    "tsc": "tsc"
   },
   "devDependencies": {
     "@types/jest": "^26.0.9",
