@@ -1,17 +1,17 @@
-import { ChangeEvent, FormEvent } from "react";
+import { ChangeEvent, FormEvent } from 'react';
 
 export interface ClickHandler {
-  (event: React.MouseEvent, ...args: any): any;
+    (event: React.MouseEvent, ...args: any): any;
 }
 
 export interface InputChangeHandler<T extends HTMLElement = HTMLInputElement> {
-  (event: ChangeEvent<T>): any;
+    (event: ChangeEvent<T>): any;
 }
 
 export interface SelectChangeHandler {
-  (event: ChangeEvent<HTMLSelectElement>): any;
+    (event: ChangeEvent<HTMLSelectElement>): any;
 }
 
 export interface FormSubmitHandler {
-  (event: FormEvent<HTMLFormElement>): any;
+    (event: FormEvent<HTMLFormElement>): any;
 }

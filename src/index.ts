@@ -1,3 +1,3 @@
-import { useFormHandler } from "./hooks/useFormHandler";
+import { useFormHandler } from './hooks/useFormHandler';
 
 export { useFormHandler };
