@@ -1,5 +1,5 @@
-import { AnyObject } from '../ts/keyValue';
-import { InputChangeHandler } from '../ts/reactHandlers';
+import { AnyObject } from '../../ts/keyValue';
+import { InputChangeHandler } from '../../ts/reactHandlers';
 import { useState, useCallback, Dispatch, SetStateAction } from 'react';
 
 type HookReturns<T> = [T, Dispatch<SetStateAction<T>>, InputChangeHandler<HTMLElement>];
