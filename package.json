@@ -15,9 +15,9 @@
     "tsc": "tsc"
   },
   "devDependencies": {
-    "@types/jest": "^26.0.9",
-    "@types/react": "^16.9.46",
-    "jest": "^26.4.0",
+    "@types/jest": "^26.0.10",
+    "@types/react": "^16.9.47",
+    "jest": "^26.4.2",
     "react": "^16.13.1",
     "typescript": "^3.9.7"
   },
