@@ -13,9 +13,9 @@ export enum FetchActions {
 /**
  * One API fetch request will have the following three states.
  *
- * [1] data - response data or the initial value
- * [2] fetching - fetch status to update UI
- * [3] errors - errors returned if the fetch was a failure.
+ * 1. data - response data or the initial value
+ * 2. fetching - fetch status to update UI
+ * 3. errors - errors returned if the fetch was a failure.
  */
 export interface IFetchState<T> {
     data: T;
@@ -41,10 +41,10 @@ export interface IFetchAction<T = any> {
 /**
  * An axios fetcher is a function that takes the following as params
  *
- * [1] url - the api endpoint
- * [2] onSuccess - axios success handler
- * [3] onError - axios error handler
- * [4] config - axios configs
+ * 1. url - the api endpoint
+ * 2. onSuccess - axios success handler
+ * 3. onError - axios error handler
+ * 4. config - axios configs
  *
  * Returns void. The callbacks will be executed when the axios response
  * is received.
@@ -62,7 +62,7 @@ export interface IFetcher {
 }
 
 /**
- * The dispatch function of the useApiFetch hook. Just pass in the api
+ * The dispatch function of the `useApiFetch` hook. Just pass in the api
  * endpoint and axios configs to this function and the hook will take
  * care of dispatching the request via Axios.
  *
@@ -78,7 +78,7 @@ export interface IFetchDispatch {
  * A reducer handler function takes state and action as parameters and
  * returns the update state value after processing.
  *
- * A third parameter init is also passed, which is the default value set as
+ * A third parameter `init` is also passed, which is the default value set as
  * state. This comes in handy, when the action requires setting the state to its
  * default value.
  */
