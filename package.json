@@ -14,6 +14,9 @@
     "build": "tsc && cp -rf package.json lib",
     "tsc": "tsc"
   },
+  "dependencies": {
+    "axios": "^0.20.0"
+  },
   "devDependencies": {
     "@types/jest": "^26.0.10",
     "@types/react": "^16.9.47",
