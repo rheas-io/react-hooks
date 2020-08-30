@@ -18,10 +18,12 @@
     "axios": "^0.20.0"
   },
   "devDependencies": {
+    "@babel/preset-react": "^7.10.4",
     "@types/jest": "^26.0.10",
     "@types/react": "^16.9.47",
     "jest": "^26.4.2",
     "react": "^16.13.1",
+    "ts-jest": "^26.3.0",
     "typescript": "^3.9.7"
   },
   "repository": {
