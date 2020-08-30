@@ -62,7 +62,7 @@ export interface IFetcher {
 }
 
 /**
- * The dispatch function of the `useApiFetch` hook. Just pass in the api
+ * The fetch trigger function of the `useApiFetch` hook. Just pass in the api
  * endpoint and axios configs to this function and the hook will take
  * care of dispatching the request via Axios.
  *
@@ -70,7 +70,7 @@ export interface IFetcher {
  * and call the axios IFetcher function and take care of the state management.
  * Hook consumers will just have to watch the state changes and update the UI.
  */
-export interface IFetchDispatch {
+export interface IFetchTrigger {
     (url: string, config?: AxiosRequestConfig): void;
 }
 

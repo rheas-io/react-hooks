@@ -3,10 +3,10 @@ import Axios, { CancelTokenSource } from 'axios';
 import { AxiosFetcher } from '../../helpers/axiosFetcher';
 import { Dispatch, useReducer, useEffect, useRef } from 'react';
 import { initFetch, fetchSuccess, fetchError } from './actions';
-import { IFetchState, IFetchDispatch, IFetchAction } from '../../ts/apiFetcher';
+import { IFetchState, IFetchTrigger, IFetchAction } from '../../ts/apiFetcher';
 import { IAxiosResponseHandler, IAxiosErrorHandler } from '../../ts/axiosResponseHandler';
 
-type HookReturns<T> = [IFetchState<T>, IFetchDispatch, Dispatch<IFetchAction<T>>];
+type HookReturns<T> = [IFetchState<T>, IFetchTrigger, Dispatch<IFetchAction<T>>];
 
 /**
  * A dedicated API fetcher for a component. Use this hook to request
@@ -91,7 +91,7 @@ export function useApiFetcher<T>(init: T): HookReturns<T> {
      * @param url api endpoint
      * @param config axios configs
      */
-    const fetchData: IFetchDispatch = (url, config?) => {
+    const fetchData: IFetchTrigger = (url, config?) => {
         cancelExistingRequest();
 
         dispatch(initFetch());
