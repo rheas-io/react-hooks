@@ -11,7 +11,7 @@ export enum FetchActions {
 }
 
 /**
- * One API fetch request will have the following three states.
+ * One API fetch request will have the following three state fields.
  *
  * 1. data - response data or the initial value
  * 2. fetching - fetch status to update UI
