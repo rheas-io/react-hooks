@@ -1,20 +1,6 @@
 import Axios from 'axios';
 import { IFetcher } from '../ts/apiFetcher';
-
-/**
- * Axios default config consists of Accept and Content-Type
- * headers set to application/json. This can be overridden by
- * sending new headers field.
- *
- * Axiosfetcher function updates the config using shallow copy, so
- * submitting a config with headers field will replace the default
- * headers.
- *
- * @var object
- */
-const default_config = {
-    headers: { Accept: 'application/json', 'Content-type': 'application/json' },
-};
+import { axiosDefaultConfig } from './axiosDefaultConfig';
 
 /**
  * Submits an Axios GET request to the given api endpoint.
@@ -25,7 +11,7 @@ const default_config = {
  */
 const AxiosFetcher: IFetcher = async function (url, onSuccess?, onError?, config?) {
     try {
-        config = Object.assign({}, default_config, config);
+        config = Object.assign({}, axiosDefaultConfig, config);
 
         let response = await Axios.get(url, config);
 
